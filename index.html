@@ -34,6 +34,8 @@
                 <li><a href="#team">team</a></li>
                 <li><a href="#skill">skill</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#testimonial">testimonial</a></li>
+                <li><a href="#contract">contract</a></li>
               </ul>
             </div>
           </nav>
@@ -203,7 +205,6 @@
 
 <!-- PORTFOLIO SECTION STATE -->
 
-<!-- tomorrow task -->
 
       <section class="portfolio-section" id="portfolio">
         <div class="row">
@@ -212,38 +213,145 @@
         </div>
           <div class="row">
             <div class="portfolio-filter">
-                <button type="button">all</button>
-                <button type="button">web</button>
-                <button type="button">apps</button>
-                <button type="button">icons</button>
+                <button type="button" data-filter="all">all</button>
+                <button type="button" data-filter=".web">web</button>
+                <button type="button" data-filter=".apps">apps</button>
+                <button type="button" data-filter=".icons">icons</button>
              </div>
           </div>
-          <div class="row">
-            <div class="col span_1_of_2 box">
+          <div class="row container">
+            <div class="col span_1_of_2 mix apps box">
                 <img src="resources/img/portfolio1.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
                 <h4>Isometric Perspective Mock-Up</h4>
              </div>
-               <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio2.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
-                <h4>Isometric Perspective Mock-Up</h4>
+               <div class="col span_1_of_2 mix apps web box">
+                <img src="resources/img/portfolio2.png" alt="Time Zone App UI" class="portfolio-image">
+                <h4>Time Zone App UI</h4>
              </div>
-             <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio3.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
-                <h4>Isometric Perspective Mock-Up</h4>
+             <div class="col span_1_of_2 mix icons box">
+                <img src="resources/img/portfolio3.png" alt="Viro Media Players UI" class="portfolio-image">
+                <h4>Viro Media Players UI</h4>
              </div>
-             <div class="col span_1_of_2 box">
-                <img src="resources/img/portfolio4.png" alt="Isometric Perspective Mock-Up" class="portfolio-image">
-                <h4>Isometric Perspective Mock-Up</h4>
+             <div class="col span_1_of_2 mix icons web apps box">
+                <img src="resources/img/portfolio4.png" alt="Blog / Magazine Flat UI Kit" class="portfolio-image">
+                <h4>Blog / Magazine Flat UI Kit</h4>
              </div>
         </div>
-         <div class="row">
+        <!-- LOAD MORE PROJECT BUTTON -->
+         <!-- <div class="row">
            <a href="#" class="btn btn-load-more">load more project</a>
-        </div>
+        </div> -->
       </section>
 
 
 <!-- PORTFOLIO SECTION END -->
 
+
+<!-- TESTIMONIAL SECTION STATE -->
+
+
+      <section class="testimonial-section" id="testimonial">
+        <div class="row">
+          <h2>WHAT PEOPLE SAY ABOUT US</h2>
+          <p class="little-description">Our clients love us!</p>
+        </div>
+         <div class="row">
+            <div class="col span_1_of_2 box">
+              <div class="clint-photo">
+                <img src="resources/img/1.jpg" alt="Chanel Iman">
+              </div>
+                <div class="clint-review">
+                  <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+                  <h3>Chanel Iman</h3>
+                  <span class="role">CEO of Pinterest</span>
+                </div>
+            </div>
+             <div class="col span_1_of_2 box">
+              <div class="clint-photo">
+                <img src="resources/img/2.jpg" alt="Chanel Iman">
+              </div>
+                <div class="clint-review">
+                  <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                  <h3>ADRIANA LIMA</h3>
+                  <span class="role">Founder of Instagram</span>
+                </div>
+            </div>
+             <div class="col span_1_of_2 box">
+              <div class="clint-photo">
+                <img src="resources/img/3.jpg" alt="Chanel Iman">
+              </div>
+                <div class="clint-review">
+                  <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+                  <h3>ANNE HATHAWA</h3>
+                  <span class="role">Lead Designer at Behance</span>
+                </div>
+            </div>
+             <div class="col span_1_of_2 box">
+              <div class="clint-photo">
+                <img src="resources/img/4.jpg" alt="Chanel Iman">
+              </div>
+                <div class="clint-review">
+                  <p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+                  <h3>EMMA STONE</h3>
+                  <span class="role">Co-Founder of Shazam</span>
+                </div>
+            </div>
+          </div>
+      </section>
+
+
+<!-- TESTIMONIAL SECTION END -->
+
+<!-- CONTRACT SECTION STATE -->
+
+
+      <section class="contract-section" id="contract">
+        <div class="row">
+          <h2>GET IN TOUCH</h2>
+          <p class="little-description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+        </div>
+        <div class="row">
+          <form action="https://formspree.io/biswarup9749@gmail.com" method="post">
+            <div class="row">
+              <div class="col span_1_of_2">
+                <input type="text" name="Name" placeholder="Your Name *" required>
+               </div>
+               <div class="col span_1_of_2">
+                <input type="email" name="Email" placeholder="Your Email *" required>
+              </div>
+            </div>
+            <div class="row">
+              <textarea name="Massage" placeholder="Your massage *" cols="30" rows="8" required></textarea>
+            </div>
+            <div class="row">
+              <input type="submit" value="SEND MASSAGE" class="btn btn-submit">
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+<!-- CONTRACT SECTION END -->
+
+<!-- FOOTER SECTION STATE -->
+
+
+      <footer class="footer-section">
+        <div class="row">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>                                                                   
+            <li><a href="#">Google+</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">Dribbble</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+<!-- FOOTER SECTION END -->
 
 
 
@@ -253,6 +361,7 @@
   <script src="vendeors/js/respond.min.js"></script>
   <script src="vendeors/js/selectivizr-min.js"></script>
   <script src="vendeors/js/amimated-circle.js"></script>
+  <script src="vendeors/js/mixitup.min.js"></script>
   <script src="resources/js/main.js"></script>
 </body>
 </html>
