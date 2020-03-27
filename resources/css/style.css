@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
 }
 
 html{
@@ -112,6 +113,10 @@ h4{
     font-size: 1.6rem;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
 
 /* PARAGRAPH */
 
@@ -143,6 +148,10 @@ header{
     float: left;
 }
 
+
+.hero-text-box{
+    width: 114rem;
+}
 /*============================*/
 /*MAIN NAVIGATION*/
 /*============================*/
@@ -172,6 +181,28 @@ header{
     transition: .3s;
     display: inline-block;
     font-size: 1.3rem;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: O;
+    width: 100%;
+    background: rgb(135, 80, 156, .9);
+    padding: 1rem 0;
+    box-shadow: 0 .02rem .5rem rgba(255, 255, 255, 0.9);
+    transition: .1s;
+    z-index: 1000;
+}
+
+.sticky .logo{
+    margin-top: 0;
+}
+
+.sticky .main-nav{
+    margin-top: .2rem;
 }
 
 .main-nav li:hover a:link,
@@ -404,7 +435,7 @@ svg.ui-ux circle{
 
 .portfolio-image{
     width: 100%;
-    height: 30rem;
+    height: auto;
 }
 
 .portfolio-section .col:nth-child(3){
