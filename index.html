@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuda Single Page portfolio Website. An awesome portfolio template.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cuda Single Page portfolio Website</title>
     <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="resources/css/responsive.css">
 </head>
 <body>
+
 
     <!--HEADER PART STATE-->
 
@@ -37,6 +39,21 @@
                 <li><a href="#testimonial">testimonial</a></li>
                 <li><a href="#contract">contract</a></li>
               </ul>
+              <div class="mobile-menu">
+                <span onclick="openNav()">&#9776;</span>
+                <div id="myNav" class="overlay">
+                  <a onclick="closeNav()" href="javascript:void(0)" class="close-btn">&times;</a>
+                  <div class="overlay-content">
+                      <a onclick="closeNav()" href="#header">home</a>
+                      <a onclick="closeNav()" href="#service">service</a>
+                      <a onclick="closeNav()" href="#team">team</a>
+                      <a onclick="closeNav()" href="#skill">skill</a>
+                      <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                      <a onclick="closeNav()" href="#testimonial">testimonial</a>
+                      <a onclick="closeNav()" href="#contract">contract</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </nav>
           <div class="row">
@@ -151,7 +168,6 @@
                   </div>
                 </div>  
             </div>
-          </div>
         </section>
 
     <!-- TEAM SECTION END -->
@@ -361,8 +377,18 @@
   <script src="vendeors/js/respond.min.js"></script>
   <script src="vendeors/js/selectivizr-min.js"></script>
   <script src="vendeors/js/jquery.waypoints.min.js"></script>
-  <script src="vendeors/js/amimated-circle.js"></script>
   <script src="vendeors/js/mixitup.min.js"></script>
   <script src="resources/js/main.js"></script>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162097126-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162097126-1');
+</script>
+  
 </body>
 </html>
